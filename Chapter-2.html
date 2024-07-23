@@ -1,0 +1,28 @@
+<html>
+    <body>
+      <h2>Chapter 2. Data Models and Query Languages</h2>
+      <br>
+      <br>
+      <h3>Relational Model Versus Document Model</h3>
+      <p>
+        The main arguments in favor of the document data model are schema flexibility, better performance due to locality, and that for some applications it is closer to the data structures used by the application. 
+        The relational model counters by providing better support for joins, and many-to-one and many-to-many relationships.
+      </p>
+      <p>
+        If the data in your application has a document-like structure (i.e., a tree of one-to-many relationships, where typically the entire tree is loaded at once), then it’s probably a good idea to use a document model.
+      </p>
+        However, if your application does use many-to-many relationships, the document model becomes less appealing.
+      <p>
+        It’s not possible to say in general which data model leads to simpler application code; it depends on the kinds of relationships that exist between data items.
+      </p>
+      <p>
+        For highly interconnected data, the document model is awkward, the relational model is acceptable, and graph models are the most natural.
+      </p>
+      <p>
+        Document databases are sometimes called schemaless, but that’s misleading, as the code that reads the data usually assumes some kind of structure—i.e., there is an implicit schema, but it is not enforced by the database.
+      </p>
+      <p>
+        A more accurate term is schema-on-read (the structure of the data is implicit, and only interpreted when the data is read), in contrast with schema-on-write (the traditional approach of relational databases, where the schema is explicit and the database ensures all written data conforms to it)
+      </p>
+    </body>
+</html>
